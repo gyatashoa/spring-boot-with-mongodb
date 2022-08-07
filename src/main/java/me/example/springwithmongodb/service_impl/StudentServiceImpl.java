@@ -14,7 +14,7 @@ public class StudentServiceImpl implements StudentService {
     private StudentRepository studentRepository;
     @Override
     public List<Student> getAllStudents() {
-        return List.of();
+        return studentRepository.findAll();
     }
 
     @Override
